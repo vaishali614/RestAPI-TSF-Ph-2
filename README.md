@@ -16,4 +16,10 @@
 ## EDIT STUDENT
 ![editstudent](https://user-images.githubusercontent.com/32364768/61819622-07635a80-ae71-11e9-9016-916ff8cb026b.JPG)
 
+# Instructions to run :
+
+1. Clone to your system
+2. Run npm install
+3. Run node app.js
+
 
