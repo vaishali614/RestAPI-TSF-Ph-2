@@ -1,0 +1,36 @@
+<% include partials/header %>
+
+<div class="container">
+    <div>
+        <h1 style="text-align: center; color: white; margin: 5% 0;"><%= student.name %></h1>
+        <div style="width: 30%; margin: 20px auto;">
+            <table border="1 solid black" style="width: 100%; background: white;">
+                <tr style="color: black; text-align: center;">
+                    <td><strong>NAME</strong></td>
+                    <td><%= student.name %></td>
+                </tr>
+                <tr style="color: black; text-align: center;">
+                    <td><strong>AGE</strong></td>
+                    <td><%= student.age %></td>
+                </tr>
+                <tr style="color: black; text-align: center;">
+                    <td><strong>EMAIL</strong></td>
+                    <td><%= student.email %></td>
+                </tr>
+                <tr style="color: black; text-align: center;">
+                    <td><strong>CONTACT</strong></td>
+                    <td><%= student.contact %></td>
+                </tr>
+            </table>
+            <br>
+            <a href="/view/<%= student._id %>/edit" class="btn btn-sm btn-primary">Edit</a>
+            <form action="/view/<%= student._id %>?_method=DELETE" method="POST" style="display: inline;">
+                <button class="btn btn-sm btn-danger">Delete</button>
+            </form>
+            <br> <br>
+            <a href="/view" class="btn btn-sm btn-success">Go Back</a>
+        </div>
+    </div>
+</div>
+
+<% include partials/footer %>
